@@ -3,7 +3,7 @@
   <img src="https://img.shields.io/static/v1?label=language&message=Bourne+Again+Shell&color=green&logo=nano">
   <img src="https://img.shields.io/static/v1?label=Framework&message=Bash+ID&color=green&logo=reddit"><br>
   <img src="https://img.shields.io/github/forks/Bayu12345677/ChatTerm?logo=git&style=social">
-  <img src="https://img.shields.io/github/license/Bayu12345677/ChatTerm?color=green&logo=apache&style=flat-square">
+  <img src="https://img.shields.io/github/license/Bayu12345677/Bot-ChatMd?color=green&logo=apache&style=flat-square">
 </p>
 
 <br>
