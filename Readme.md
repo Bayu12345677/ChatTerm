@@ -44,8 +44,6 @@ done
   <br>
 # simple config.sh
 ```bash
-#!usr/bin/bash
-
 # semisal saya mengeksekusi bot dengan nama variabel input, read -p "input : " input
 # jadi sesuaikan nama variabel dengan input pengguna jika ingin membuat fitur seperti di bawah ini
 
