@@ -342,7 +342,7 @@ function Fungsi()
 		for array1 in "${data1}"; do { DataArray1[$arr1]="$array1"; let arr1++; }; done
 		for array2 in "${data2}"; do { DataArray2[$arr2]="$array2"; let arr2++; }; done
 		
-		local city=$(grep -Po '(?<=<h2 class="text-white" style="margin-left:10px; padding-top:10px;">)[^}.]*' <<< "$resp"|cut -d "<" -f 1)
+		local city=$(grep -Po '(?<=<h2 class="text-white" style="margin-left:10px; padding-top:10px;">)[^}.]*' <<< "$resp"|cut -d "<" -f 1|sed 's/>.*//g')
 		local database=(
 			[0,1,1]=$(cat <<< "$city")
 			[0,1,2]=$(cat <<< "${DataArray1[1]}")
@@ -359,7 +359,7 @@ function Fungsi()
 			local argsAi="$waktu"
 			eval AiTime
 
-			cat <<< "Hari [$statusH] | waktu kini (${Date}. $dataWaktu $datazona) $statusW | inf [${database[0,1,1]},${database[0,1,2]},${database[0,1,5]},${database[0,1,6]}]"
+			cat <<< "Hari [$statusH] | waktu kini (${Date}. $dataWaktu $datazona) $statusW | inf [${database[0,1,1]},${database[0,1,2]},${database[0,1,5]},${database[0,1,6]}]"|tr -d '"'|sed 's/>.*//g'|head -2|sed 's/\\n/ /g'
 		else
 			cat <<< "Hari [$statusH] | waktu kini ($dataWaktu $datazona) $statusW"
 		fi
