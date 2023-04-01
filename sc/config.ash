@@ -261,6 +261,20 @@ function mtk(){
 		fi
 }
 
+function MainMenu(){
+	local menu=$(cat <<< "
+	     [ • List Menu • ]
+	     
+	-> mtk (example: mtk 5 + 5)
+	-> batu gunting kertas
+	-> seberapa ganteng gua
+	-> search (example: search apa itu bash)
+	-> seberapa ganteng #objek (example: seberapa ganteng aldo)
+	-> informasi terkini
+	-> comming soon")
+
+	echo "$menu"
+}
 # oop fungsi umum
 function Fungsi()
 {
@@ -471,4 +485,8 @@ msg17=(
 msg18=(
 	[0,0,1]="\"(s|S)earch[[:space:]].*$\""
 	[0,0,2]="\"$(Fungsi.App.search)\""
+)
+msg19=(
+	[0,0,1]="\"menu (bot|ai|saat ini|script)$\" \"menu\""
+	[0,0,2]="\"$(MainMenu)\""
 )
