@@ -487,6 +487,6 @@ msg18=(
 	[0,0,2]="\"$(Fungsi.App.search)\""
 )
 msg19=(
-	[0,0,1]="\"menu (bot|ai|saat ini|script)$\" \"menu\""
+	[0,0,1]="\"menu (bot|ai|saat ini|script)$\" \"menu$\""
 	[0,0,2]="\"$(MainMenu)\""
 )
